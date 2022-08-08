@@ -27,12 +27,9 @@ try:
     for elem in elems:
         url = str(elem.get_attribute("href"))
         sku = str(random.randrange(56896900000, 56897500000, 50000))
-
         try:
             for i in range(0, n, 48):
-
                 try:
-
                     strPageNum = str(i)
 
 		    # iterate through all the different urls for the website. 
@@ -85,7 +82,6 @@ try:
                         print("\n")
 
                         f.write(sku + "," + department + "," + sub_department + "," + final_department + "," + prod_name.replace("," , " ") + "," + str(price.replace("," , " ")) + "," + str(color_container) + "\n")
-
                 except:
                     break
         except:
