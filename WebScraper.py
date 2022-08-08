@@ -35,7 +35,7 @@ try:
 
                     strPageNum = str(i)
 
-					# iterate through all the different urls for the website. 
+		    # iterate through all the different urls for the website. 
                     CompleteUrl = (url + "?beginIndex=" + strPageNum)
 
                     # A lot of sites don't like the user agents of Python 3, so I specify one here
@@ -55,7 +55,7 @@ try:
 
                     final_department = departments[3].span.text.strip()
 
-					# Organize extracted data
+		    # Organize extracted data
                     for container in containers:
 
                         print("SKU: " + sku)
